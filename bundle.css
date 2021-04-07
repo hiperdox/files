@@ -1,0 +1,106 @@
+/* -----------------------------------------------------
+ CSS Bundle | Created by Biyan Pasau | Heybi.com
+ Version 1.1.0
+ ---------------------------------------------------- */
+
+/* -----------------------------------------------------
+ Social Gadgets
+ -------------------------------------------------------
+ Assigned three data attributes
+ data-skin   -> Consists of three values: button, circle, minimal
+ data-size   -> Consists of two values: small, medium
+ data-align  -> Consists of three values: left, center, right
+ ---------------------------------------------------- */
+#hyb-socialgadgets {
+	margin: 0 -5px;
+	font-size: 0;
+}
+#hyb-socialgadgets:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+#hyb-socialgadgets > li {
+	display: inline-block;
+	height: 30px;
+	margin: 0 5px;
+	font-size: 12px;
+}
+#hyb-socialgadgets > li a {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight: bold;
+	font-size: 1em;
+	line-height: 30px;
+	text-decoration: none;
+	display: inline-block;
+	color: #fff;
+	padding: 0 8px 0 26px;
+	background-color: #1c1c1c;
+	background-size: 13px;
+	background-position: 8px center;
+	background-repeat: no-repeat;
+	border-radius: 2px;
+	overflow: hidden;
+	position: relative;
+}
+	#hyb-socialgadgets > li.icon-facebook a {
+		background-color: #3B5998;
+		background-image: url(https://2.bp.blogspot.com/-_HBerysStuc/Wwkou1SlxzI/AAAAAAAAMx4/vQKwTwFgEoU-ffUuIL-V8voSbOa_tAVaACPcBGAYYCw/s1600/icon-facebook.png);
+	}
+	#hyb-socialgadgets > li.icon-twitter a {
+		background-color: #2796DD;
+		background-image: url(https://4.bp.blogspot.com/-5RlpgWgBjh8/Wwkou3CDK2I/AAAAAAAAMx8/qSldSal2n8cyuz8dzs-yOhw5AFixfczWwCPcBGAYYCw/s1600/icon-twitter.png);
+	}
+	#hyb-socialgadgets > li.icon-instagram a {
+		background-color: #5480A2;
+		background-image: url(https://3.bp.blogspot.com/-C_XFDPuxgQw/Wwkou65R-mI/AAAAAAAAMyA/VW0MPei7K4Ae7qbtuagBoS0uOvl_7mBEQCPcBGAYYCw/s1600/icon-instagram.png);
+	}
+	#hyb-socialgadgets > li.icon-youtube a {
+		background-color: #E5424D;
+		background-image: url(https://1.bp.blogspot.com/-Vv55BIlXPUM/WwkovbcFhsI/AAAAAAAAMx8/Ymk5dDB_6aELCk0p45IZxPcCOQTT3HWbgCPcBGAYYCw/s1600/icon-youtube.png);
+	}
+
+/*
+ Data-Skins | Default: button
+ */
+#hyb-socialgadgets[data-skin="circle"] > li a {
+	width: 20px;
+	border-radius: 100px;
+	text-indent: -500px;
+}
+#hyb-socialgadgets[data-size="small"][data-skin="circle"] > li a {
+	padding: 0;
+	background-position: center center;
+	background-size: 10px;
+}
+#hyb-socialgadgets[data-size="medium"][data-skin="circle"] > li a {
+	padding: 0;
+	width: 30px;
+}
+
+/*
+ Data-Size | Default: medium
+ */
+#hyb-socialgadgets[data-size="small"] > li {
+	height: 20px;
+}
+#hyb-socialgadgets[data-size="small"] > li a {
+	line-height: 20px;
+	padding: 0 5px 0 23px;
+	background-position: 5px center;
+}
+
+/*
+ Data-Size | default: left
+ */
+#hyb-socialgadgets[data-align="right"] {
+	text-align: right;
+}
+#hyb-socialgadgets[data-align="right"] > li a {
+	text-align: left;
+}
+#hyb-socialgadgets[data-align="center"] {
+	text-align: center;
+}
